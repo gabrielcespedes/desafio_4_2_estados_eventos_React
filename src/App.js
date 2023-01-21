@@ -7,14 +7,11 @@ import Btn from './components/Button';
 
 function App() {
   const [buttonActivated, setButtonActivated] = useState(false);
+  const [name, setName] = useState('');
+  const [password, setPassword] = useState('');
     
 
   const evalContent = () => {
-    const name = document.getElementById('name').value;
-    const password = document.getElementById('password').value;
-
-    console.log(name, password)
-
     if (name.length > 0 && password.length > 0) {
       setButtonActivated(true);
     } else {
@@ -37,13 +34,16 @@ function App() {
   return (
     <div className="App container w-50">
       <h1 className='text-center'>Desafío Estado de los Componentes y Eventos</h1>
+      <div className='alert alert-danger'>Datos incorrectos</div>
       <form onSubmit={handleSubmit}>
         <label>Nombre</label>
-        <input id='name' className='form-control' type='text' onChange={evalContent}></input>
+        <input id='name' className='form-control' type='text' onChange={(e) => {setName(e.target.value)
+        evalContent()}}></input>
         <label>Password</label>
-        <input id='password' className='form-control' type='password' onChange={evalContent}></input>      
+        <input id='password' className='form-control' type='password' onChange={(e) => {setPassword(e.target.value)
+        evalContent()}}></input>      
         <div className='mt-3'>
-          {buttonActivated && <Btn text = "Iniciar sesión"></Btn>}        
+          {name.length > 0 && password.length >0 && <Btn text = "Iniciar sesión"></Btn>}        
         </div>  
       </form>    
     </div>
