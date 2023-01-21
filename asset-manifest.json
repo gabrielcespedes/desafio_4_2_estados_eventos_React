@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/desafio_4_2_estados_eventos_React/static/css/main.e906e9c4.css",
+    "main.js": "/desafio_4_2_estados_eventos_React/static/js/main.5d368e15.js",
+    "static/js/787.d88075cf.chunk.js": "/desafio_4_2_estados_eventos_React/static/js/787.d88075cf.chunk.js",
+    "index.html": "/desafio_4_2_estados_eventos_React/index.html",
+    "main.e906e9c4.css.map": "/desafio_4_2_estados_eventos_React/static/css/main.e906e9c4.css.map",
+    "main.5d368e15.js.map": "/desafio_4_2_estados_eventos_React/static/js/main.5d368e15.js.map",
+    "787.d88075cf.chunk.js.map": "/desafio_4_2_estados_eventos_React/static/js/787.d88075cf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e906e9c4.css",
+    "static/js/main.5d368e15.js"
+  ]
+}
