@@ -1,9 +1,11 @@
-const Button = (props) => {
+import Button from 'react-bootstrap/Button';
+
+const Btn = (props) => {
     const {text} = props;
 
     return(
-        <button className="btn btn-primary">{text}</button>
+        <Button variant = "primary" type="submit">{text}</Button>
     )
 }
 
-export default Button;
+export default Btn;
